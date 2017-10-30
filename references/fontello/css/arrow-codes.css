@@ -1,0 +1,3 @@
+
+.icon-list-open:before { content: '\e800'; } /* '' */
+.icon-list-close:before { content: '\e801'; } /* '' */

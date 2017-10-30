@@ -1,0 +1,529 @@
+html, body {
+
+}
+
+* {
+	box-sizing: border-box;
+}
+.wrapper {
+}
+
+.visuallyHidden {    
+    position: absolute; 
+    overflow: hidden;   
+    clip: rect(0 0 0 0);    
+    height: 1px;    
+    width: 1px; 
+    margin: -1px;   
+    padding: 0; 
+    border: 0;
+}
+
+
+/*First Section*/
+
+.first-section {
+	min-height: 100vh;
+	background-image: url(../img/first-bg.jpg);
+	background-size: cover;
+}
+
+.first-section-content {
+	max-width: 940px;
+	margin: 0 auto;
+	display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-menu {
+	padding-top: 10px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.header-menu__logo {
+	margin-right: auto;
+}
+.header-menu-nav {
+    margin-top: -4px;
+
+	
+	
+}
+
+.header-menu-nav-links {
+	display: inline-block;
+	list-style: none;
+	font-family: "ubuntumedium";
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+    vertical-align: middle;
+  	white-space: nowrap;
+	}
+
+.header-menu-nav-links__link {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.header-menu-nav-links__item:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #fff;
+    margin: 0 12px;
+        box-sizing: border-box;
+}
+
+
+.header-menu-nav-links__item:last-child:after {
+	display: none;
+
+}
+
+.header-menu-nav-links__item {
+	display: inline;
+	white-space: nowrap;
+	vertical-align: middle;
+	
+}
+
+.header-menu-order {
+	width: 97px;
+	height: 35px;
+	margin-left: 14px;
+	 margin-top: -4px;
+    margin-right: -2px;
+	background-color: #e45028;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "ubuntumedium";
+	font-size: 13px;
+	text-align: center;
+	line-height: 35px;
+	display: inline-block;
+	
+}
+
+.header-menu-order__link {
+	display: block;
+	text-decoration: none;
+	color: #fff; 
+}
+
+.header-menu-order:hover {
+	background-color: #c1401e;
+}
+
+
+.first-section-main-content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 861px;
+    height: 414px;
+    margin: -207px 0 0 -430px;
+	}
+
+.burger {
+	margin-top: -10px;
+}
+
+.descr {
+	margin-left: 13px;
+	padding-top: 126px;
+}
+
+.descr__title {
+	font-size: 72px;
+	font-family: 'gagalin';
+	color: #f9b43b;
+}
+
+.descr__main-text {
+	font-size: 65px;
+	line-height: 60px;
+	margin-top: 20px;
+	font-family: 'lifehack';
+	color: #fff;
+	letter-spacing: -1.625px;
+	display: block;
+	
+}
+
+.arrow-down {
+	text-align: center;
+	margin-bottom: 25px;
+
+}
+
+.arrow-down__pic {
+	animation-duration: .2s;
+}
+
+/*Second Section*/
+
+.second-section {
+	min-height: 100vh;
+	background-image: url(../img/vegetables.jpg);
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	position: relative;
+}
+
+.second-section-title {
+	font-size: 72px;
+	line-height: 64px;
+	font-family: 'gagalin' ;
+	padding-top: 80px;
+	margin: 0 auto;
+	text-align: center;
+	color: #2f3234;
+	
+}
+
+.second-section-cons {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	right: 25%;
+	margin: 0 auto;
+
+}
+
+.second-section-cons-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	max-width: 940px;
+	justify-content: space-between;
+	margin: 85px auto;
+	list-style-type: none;
+	align-items: baseline;
+	
+
+}
+
+
+.second-section-cons-item {
+	max-width: 300px;
+}
+
+.second-section-cons-item-list__visual {
+	margin-bottom: 30px;
+	text-align: center;
+	
+}
+
+.second-section-cons-item-list__title {
+	font-family: 'lifehack';
+	font-size: 24.1px;
+	line-height: 28.1px;
+	letter-spacing: -1.625px;
+	color: #2f3234;
+	margin-bottom: 30px;
+	text-align: center;
+	
+
+}
+
+.second-section-cons-item-list__descr {
+	text-align: center;
+	font-family: 'ubuntulight';
+	font-size: 14.03px;
+	line-height: 24.05px;
+}
+
+/*Third Section*/
+/*fourth Section*/
+
+.fourth-section {
+	min-height: 100vh;
+	background-image: url(../img/team.jpg);
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.fourth-section__content {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 50%;
+	background-color: rgba(49, 52, 54, .93);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.fourth-section-team {
+	margin-left: 80px;
+}
+
+.team-list {
+	margin-top: 90px;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.fourth-section-team__title {
+	font-family: 'Gagalin';
+	font-size: 72px;
+	line-height: 64px;
+	color:#f9b43b;
+}
+
+.team-list__member {
+	margin-left: 15px;
+/*	margin-bottom: 40px;*/
+}
+
+.team-list__member--active .team-list__member-name {
+	color:#f9b43b;
+}
+
+.team-list__member--active .icon-list-open:before { content: '\e801';
+}
+
+.team-list__member--active .team-list__member-descr {
+	height: 140px;
+}
+
+.team-list__member-name {
+	font-family: 'Gagalin';
+	font-size: 14px;
+	line-height: 28.11px;
+	color:#fff;
+	text-transform: uppercase;
+	margin-left: -15px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.team-list__member-descr {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	overflow: hidden;
+	align-items: flex-start;
+	width: 350px;
+	height: 0;
+	transition: 1s;
+
+
+}
+
+
+.team-list__member-avatar {
+	height: 100px;
+	min-width: 100px;
+	border-radius: 50%;
+	background-position: center center;
+	background-size: cover;
+}
+
+.team-list__member-about {
+	margin-left: 20px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.team-list__member-occ {
+	font-family: 'ubuntubold';
+	margin-bottom: 25px;
+
+}
+
+.team-list__member-text {
+	font-family: 'ubuntulight';
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fifth Section*/
+
+/*sixth Section*/
+
+.sixth-section {
+	height: 100vh;
+	background-color: #333333;
+}
+
+.reviews {
+/*	max-width: 1100px;*//*
+	margin: 0 auto;*/
+	height: 100vh;
+
+}
+
+.reviews-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+.reviews-list-item {
+	display: inline-block;
+	width: 25%;
+	height: 50%;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+
+
+}
+.reviews-list-item-bg {
+	position: absolute;
+	display: none;
+	background-color: #454545;
+	opacity: 0;
+	width: 25%;
+	height: 50%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	transition: .3s;
+}
+
+.reviews-list-item:hover .reviews-list-item-info {
+	opacity: 1;
+
+	
+}
+
+
+.reviews-list-item:nth-child(2n) {
+	background-color: #b9b9b9;
+}
+
+.reviews-list-item:nth-child(2n+1) {
+	background-color: #d5d5d5;
+}
+
+
+.reviews-list-item__avatar {
+	filter: saturate(0%);
+	display: block;
+	height: 100%;
+}
+
+.reviews-list-item-info {
+/*	width: 275px;
+	height: 325px;*/
+	height: 100%;
+	z-index: 200;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	color:#fff;
+	background-color: rgba(20, 20, 20, .7);
+
+	
+
+}
+
+.reviews-list-item-info__name {
+	font-size: 14px;
+	line-height: 28.11px;
+	font-family: 'gagalin';
+	margin: 50px 0 20px 30px;
+
+	
+}
+
+.reviews-list-item-info__text {
+	font-size: 14px;
+	font-family: 'ubuntulight';
+	line-height: 24px;
+	margin: 0 30px 20px 20px;
+}
+
+.reviews-list-item-info__detail {
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	background-color: #2f3234;
+	margin-left: 20px;
+}
+
+.reviews-list-item-info__detail a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'ubuntumedium';
+	text-transform: uppercase;
+	}
+
+.reviews-list-item-info__detail:hover {
+	background-color: #1f2122;
+}
