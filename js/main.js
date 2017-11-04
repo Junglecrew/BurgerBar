@@ -13,7 +13,6 @@
       $(this).addClass('team__member--active');
      });
 
-
 })
 
 

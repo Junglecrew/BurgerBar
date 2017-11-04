@@ -66,7 +66,12 @@ li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+@include tablets() {
+    padding: 0.625rem 1.25rem 0 1.25rem;  
+  }
+@include phones() {
+    padding: 0.625rem 1.25rem 0 1.25rem;  
+  }
 
 }
 
@@ -115,7 +120,7 @@ li {
     content: ' ';
     width: 0.3125rem;
     height: 0.3125rem;
-    border-radius: 2.0.3125rem;
+    border-radius: 50%;
     background-color: #fff;
     margin: 0 0.75rem;
         box-sizing: border-box;
@@ -202,6 +207,7 @@ li {
     flex-direction: column;
     text-align: center;
     margin-bottom: 3.125rem;
+
   }
 	}
 
@@ -650,12 +656,19 @@ li {
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
-	position: relative;
+}
+
+.section__title--fifth-section {
+	color:#fff;
+	margin-top: 5%;
+	margin-left: 5%;
+
 }
 
 .menu {
 	position: absolute;
 	right: 0;
+	top: 0;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
