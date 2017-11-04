@@ -7,11 +7,12 @@
       $(this).removeClass('animated zoomIn'); 
      });
 
-    $('.team-list__member').click(
+    $('.team__member').click(
      function() {
-      $('.team-list__member').removeClass('team-list__member--active');
-      $(this).addClass('team-list__member--active');
+      $('.team__member').removeClass('team__member--active');
+      $(this).addClass('team__member--active');
      });
+
 
 })
 
