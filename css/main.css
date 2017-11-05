@@ -156,10 +156,17 @@ li {
 
 .first-section__burger {
   margin-top: -0.625rem; }
+  @media screen and (max-width: 30rem) {
+    .first-section__burger {
+      transform: scale(0.8); } }
+
+@media screen and (max-width: 30rem) {
+  .burger__image {
+    max-width: 100%; } }
 
 .first-section__descr {
   margin-left: 0.8125rem;
-  padding-top: 7.875rem; }
+  padding-top: 4.875rem; }
   @media screen and (max-width: 48rem) {
     .first-section__descr {
       padding-top: 0; } }
@@ -167,6 +174,9 @@ li {
 .section__title {
   font-size: 4.5rem;
   font-family: 'gagalin'; }
+  @media screen and (max-width: 30rem) {
+    .section__title {
+      font-size: 3.125rem; } }
 
 .section__title--orange {
   color: #f9b43b; }
@@ -179,6 +189,9 @@ li {
   color: #fff;
   letter-spacing: -1.39 0.0625rem;
   display: block; }
+  @media screen and (max-width: 30rem) {
+    .descr__main-text {
+      font-size: 2.6rem; } }
 
 .arrow-down {
   text-align: center;
@@ -311,9 +324,6 @@ li {
   padding-top: 0.625rem; }
 
 .fourth-section-team__title {
-  font-family: 'Gagalin';
-  font-size: 4.5rem;
-  line-height: 4rem;
   color: #f9b43b;
   margin-top: -1.875rem; }
 
@@ -337,6 +347,9 @@ li {
   @media screen and (max-width: 48rem) {
     .team__member--active .team__member-descr {
       height: 14.0625rem; } }
+  @media screen and (max-width: 30rem) {
+    .team__member--active .team__member-descr {
+      width: 100%; } }
 
 .team__member-name {
   font-family: 'Gagalin';
@@ -363,6 +376,9 @@ li {
     .team__member-descr {
       margin: 0 auto;
       flex-direction: column; } }
+  @media screen and (max-width: 30rem) {
+    .team__member-descr {
+      width: 100%; } }
 
 .team__member-avatar {
   min-height: 6.25rem;
@@ -459,7 +475,7 @@ li {
       margin: 1.25rem 0 1.25rem 1.25rem; } }
   @media screen and (max-width: 30rem) {
     .reviews__name {
-      margin-top: 80px; } }
+      margin-top: 40px; } }
 
 .reviews__text {
   font-size: 0.875rem;
@@ -633,7 +649,8 @@ li {
   @media screen and (max-width: 30rem) {
     .order-form__tag {
       flex-direction: column;
-      padding: 0 20px; } }
+      padding: 0 20px;
+      width: auto; } }
 
 .order-form-side {
   width: 50%;

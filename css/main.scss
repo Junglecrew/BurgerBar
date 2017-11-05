@@ -213,11 +213,21 @@ li {
 
 .first-section__burger {
 	margin-top: -0.625rem;
+@include phones() {
+	transform: scale(.8);
+  }	
+}
+
+.burger__image {
+ @include phones() {
+	max-width: 100%;
+  }	
+
 }
 
 .first-section__descr {
 	margin-left: 0.8125rem;
-	padding-top: 7.875rem;
+	padding-top: 4.875rem;
 
  @include tablets() {
     padding-top: 0;
@@ -227,6 +237,9 @@ li {
 .section__title {
 	font-size: 4.5rem;
 	font-family: 'gagalin';
+ @include phones() {
+	font-size: 3.125rem;
+  }	
 }
 
 .section__title--orange {
@@ -241,6 +254,10 @@ li {
 	color: #fff;
 	letter-spacing: -1.39.0625rem;
 	display: block;
+ @include phones() {
+	font-size: 2.6rem;
+  }	
+
 	
 }
 
@@ -411,9 +428,6 @@ li {
 }
 
 .fourth-section-team__title {
-	font-family: 'Gagalin';
-	font-size: 4.5rem;
-	line-height: 4rem;
 	color:#f9b43b;
 	margin-top: -1.875rem;
 }
@@ -441,6 +455,9 @@ li {
 
  @include tablets() {
 	height: 14.0625rem;
+	}
+ @include phones() {
+	width: 100%;
 	}
 }
 
@@ -470,6 +487,9 @@ li {
 	margin: 0 auto;
 	flex-direction: column;
   }	
+@include phones() {
+	width: 100%;
+	}
 }
 
 
@@ -605,7 +625,7 @@ li {
 	margin: 1.25rem 0 1.25rem 1.25rem;
   }	
  @include phones() {
-	margin-top: 80px;
+	margin-top: 40px;
   }	
 
 	
@@ -818,6 +838,7 @@ li {
  @include phones() {
 	flex-direction: column;
 	padding: 0 20px;
+	width: auto;
   }	
 }
 
