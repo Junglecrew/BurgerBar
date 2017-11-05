@@ -758,9 +758,12 @@ li {
 	background-image: url(../img/menu-diet.jpg);
 }
 
-.menu__item--active .menu__item-content{
-	width: 33.75rem;
-}
+.menu__item--active .menu__item-content {
+	width: 33.75rem;} 
+
+.menu__item--active .menu__item-title {
+	color:#f9b43b;
+	}
 
 .menu__item-title span {
 	transform: rotate(-90deg);
@@ -885,6 +888,7 @@ li {
 .order-form__input--comment {
 	height: 7.25rem;
 	padding-top: 0.3125rem;
+	resize: none;
 }
 
 .order-form__element {
