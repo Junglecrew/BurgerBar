@@ -7,6 +7,9 @@ $phones: 30rem;
 //Media
 @import "media.scss";
 
+@import "../references/fontello/css/arrow.scss";
+
+@import "../references/Social_font/css/arrow.scss";
 
 
 
@@ -1091,6 +1094,12 @@ input[type="checkbox"]:checked + label span {
 .footer-socials__img {
 	height: 1.25rem;
 	width: 1.25rem;
+	color: #303030;
+	transition: .2s;
+	font-size: 1rem;
+	&:hover {
+		color:#fff;
+	}
 }
 
 .footer-socials__item {
@@ -1099,4 +1108,5 @@ input[type="checkbox"]:checked + label span {
 
 .footer-socials__item:first-child {
 	margin-left: 0;
+	margin-right: 0.625rem;
 }

@@ -1,3 +1,119 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'arrow';
+  src: url("../fonts/arrow.eot?27025030");
+  src: url("../fonts/arrow.eot?27025030#iefix") format("embedded-opentype"), url("../fonts/arrow.woff2?27025030") format("woff2"), url("../fonts/arrow.woff?27025030") format("woff"), url("../fonts/arrow.ttf?27025030") format("truetype"), url("../fonts/arrow.svg?27025030#arrow") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'arrow';
+    src: url('../font/arrow.svg?27025030#arrow') format('svg');
+  }
+}
+*/
+[class^="arrow-"]:before, [class*=" arrow-"]:before {
+  font-family: "arrow";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  font-size: 8px;
+  line-height: 14px;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 10px;
+  text-align: center;
+  color: #f9b43b;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  /*  line-height: 1em;*/
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.arrow-list-open:before {
+  content: '\e800'; }
+
+/* '' */
+.arrow-list-close:before {
+  content: '\e801'; }
+
+/* '' */
+@font-face {
+  font-family: 'socials';
+  src: url("../fonts/socials.eot?87884751");
+  src: url("../fonts/socials.eot?87884751#iefix") format("embedded-opentype"), url("../fonts/socials.woff2?87884751") format("woff2"), url("../fonts/socials.woff?87884751") format("woff"), url("../fonts/socials.svg?87884751#arrow") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'arrow';
+    src: url('../font/arrow.svg?87884751#arrow') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "socials";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-inst:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-twitter:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-vk:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-fb:before {
+  content: '\e805'; }
+
+/* '' */
 html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -855,10 +971,16 @@ input[type="checkbox"]:checked + label span {
 
 .footer-socials__img {
   height: 1.25rem;
-  width: 1.25rem; }
+  width: 1.25rem;
+  color: #303030;
+  transition: .2s;
+  font-size: 1rem; }
+  .footer-socials__img:hover {
+    color: #fff; }
 
 .footer-socials__item {
   margin-left: 1.25rem; }
 
 .footer-socials__item:first-child {
-  margin-left: 0; }
+  margin-left: 0;
+  margin-right: 0.625rem; }

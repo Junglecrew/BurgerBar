@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'arrow';
-  src: url('../font/arrow.eot?27025030');
-  src: url('../font/arrow.eot?27025030#iefix') format('embedded-opentype'),
-       url('../font/arrow.woff2?27025030') format('woff2'),
-       url('../font/arrow.woff?27025030') format('woff'),
-       url('../font/arrow.ttf?27025030') format('truetype'),
-       url('../font/arrow.svg?27025030#arrow') format('svg');
+  font-family: 'socials';
+  src: url('../font/socials.eot?87884751');
+  src: url('../font/socials.eot?87884751#iefix') format('embedded-opentype'),
+       url('../font/socials.woff2?87884751') format('woff2'),
+       url('../font/socials.woff?87884751') format('woff'),
+/*       url('../font/arrow.ttf?87884751') format('truetype'),*/
+       url('../font/socials.svg?87884751#arrow') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,25 +15,22 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'arrow';
-    src: url('../font/arrow.svg?27025030#arrow') format('svg');
+    src: url('../font/arrow.svg?87884751#arrow') format('svg');
   }
 }
 */
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "arrow";
+  font-family: "socials";
   font-style: normal;
   font-weight: normal;
   speak: none;
-  font-size: 8px;
-  line-height: 14px;
  
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: 10px;
+  margin-right: .2em;
   text-align: center;
-  color:#f9b43b;
   /* opacity: .8; */
  
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -41,7 +38,7 @@
   text-transform: none;
  
   /* fix buttons height, for twitter bootstrap */
-/*  line-height: 1em;*/
+  line-height: 1em;
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
@@ -58,5 +55,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-list-open:before { content: '\e800'; } /* '' */
-.icon-list-close:before { content: '\e801'; } /* '' */
+.icon-inst:before { content: '\e802'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
+.icon-vk:before { content: '\e804'; } /* '' */
+.icon-fb:before { content: '\e805'; } /* '' */
