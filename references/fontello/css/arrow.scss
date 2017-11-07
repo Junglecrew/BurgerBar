@@ -20,7 +20,7 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="arrow-"]:before, [class*=" arrow-"]:before {
   font-family: "arrow";
   font-style: normal;
   font-weight: normal;
@@ -58,5 +58,5 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-list-open:before { content: '\e800'; } /* '' */
-.icon-list-close:before { content: '\e801'; } /* '' */
+.arrow-list-open:before { content: '\e800'; } /* '' */
+.arrow-list-close:before { content: '\e801'; } /* '' */

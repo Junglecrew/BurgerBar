@@ -4,13 +4,22 @@ $laptop: 62rem;
 $tablets: 48rem;
 $phones: 30rem;
 
+//Normalize
+@import "normalize.scss";
+
+
 //Media
 @import "media.scss";
 
+//Fontello
 @import "../references/fontello/css/arrow.scss";
-
 @import "../references/Social_font/css/arrow.scss";
 
+//Fonts
+@import "fonts.scss";
+
+//Animate
+@import "animate.scss";
 
 
 html, body {
@@ -148,6 +157,17 @@ h2 {
 	
 }
 
+.header-menu__burger-link {
+	margin-left: 1.875rem;
+	display: none;
+@include tablets() {
+    display: block;
+  }
+@include phones() {
+    display: block;
+  }
+}
+
 .btn {
 	width: 6.0625rem;
 	height: 2.1875rem;
@@ -194,7 +214,7 @@ h2 {
 	color: #fff; 
 }
 
-.header-menu-order:hover {
+.btn:hover {
 	background-color: #c1401e;
 }
 
@@ -248,7 +268,17 @@ h2 {
 	font-family: 'gagalin';
  @include phones() {
 	font-size: 3.125rem;
+	margin-top: 0;
+	margin-bottom: 0;
   }	
+}
+
+.section__title-first-section {
+ @include phones() {
+	margin-top: 0;
+	margin-bottom: 0;
+  }	
+
 }
 
 .section__title--orange {
@@ -273,6 +303,9 @@ h2 {
 .arrow-down {
 	text-align: center;
 	margin-bottom: 1.5625rem;
+ @include phones() {
+	display: none;
+	  }	
 
 }
 
@@ -348,6 +381,7 @@ h2 {
     flex-direction: column;
     margin:0 auto; 
     align-items:baseline;
+
   }	
 	
 
@@ -361,6 +395,8 @@ h2 {
 	flex-direction: column;
  @include phones() {
     flex-direction: row;
+   	margin-right: 0;
+
   }	
 }
 
@@ -381,14 +417,15 @@ h2 {
 	font-size: 1.5rem;
 	color: #2f3234;
 	margin-bottom: 0.8125rem;
-
 }
 
 .second-section-advantages__descr {
 	font-family: 'ubuntulight';
 	font-size: 0.875rem;
 	line-height: 1.5rem;
-}
+ @include phones() {
+	font-size: 0.625rem;
+} }
 
 // Third Section
 
@@ -582,9 +619,6 @@ h2 {
 	width: 50%;
 	height: 25%;
   }	
-
-
-
 }
 
 .reviews__item:hover .reviews__info {
@@ -719,6 +753,10 @@ h2 {
 
 .menu__link {
 	text-decoration: none;
+	transition: all .2s;
+	&:hover {
+		transform: scale(1.2);
+	}
 	
 }
 
@@ -755,7 +793,10 @@ h2 {
 	background-position: center;
 	overflow: hidden;
 
+
 }
+
+
 
 .menu__item-title--meat {
 	background-image: url(../img/menu-meat.jpg);
@@ -832,6 +873,9 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+ @include phones() {
+	height: auto;
+  }	
 }
 
 .order-form__fields {
@@ -1007,7 +1051,6 @@ input[type="checkbox"]:checked + label span {
 	background-image: url(../img/map.jpg);
 	background-size: cover;
 	overflow: hidden;
-	position: relative;
 	position: relative;
 }
 
