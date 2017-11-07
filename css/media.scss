@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin tablets920 {
+  @media screen and (max-width: 57.5rem) {
+    @content;
+  }
+}
