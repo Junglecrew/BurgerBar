@@ -42,9 +42,6 @@ h2 {
 	font-size: 2.5rem;
 }
 
-.wrapper {
-}
-
 .visuallyHidden {    
     position: absolute; 
     overflow: hidden;   
@@ -57,12 +54,19 @@ h2 {
 }
 
 
+.section {
+	min-height: 100vh;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+
+}
+
+
 // First Section
 
 .first-section {
-	min-height: 100vh;
 	background-image: url(../img/first-bg.jpg);
-	background-size: cover;
 }
 
 .first-section__content {
@@ -316,11 +320,7 @@ h2 {
 // Second Section
 
 .second-section {
-	min-height: 100vh;
 	background-image: url(../img/vegetables.jpg);
-	background-size: cover;
-	overflow: hidden;
-	position: relative;
 }
 
 .second-section__title {
@@ -433,11 +433,8 @@ h2 {
 // fourth Section
 
 .fourth-section {
-	min-height: 100vh;
 	background-image: url(../img/team.jpg);
-	background-size: cover;
-	overflow: hidden;
-	position: relative;
+
 }
 
 .fourth-section__content {
@@ -575,18 +572,132 @@ h2 {
 }
 
 
-
-
-
-
-
-
 // fifth Section
+
+
+.fifth-section {
+	background-image: url(../img/menu-bg.jpg);
+}
+
+.section__title--fifth-section {
+	color:#fff;
+	margin-top: 5%;
+	margin-left: 5%;
+
+}
+
+.menu {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+
+}
+
+.menu__list {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.menu__link {
+	text-decoration: none;
+	transition: all .2s;
+	&:hover {
+		transform: scale(1.2);
+	}
+	
+}
+
+.menu__item {
+	height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+}
+
+.menu__item-title {
+	box-shadow:inset 0 0 0 125rem rgba(0,0,0,.7);
+	font-size: 2.5rem;
+	width: 4.375rem;
+	padding-left: 0.5625rem;
+	font-family: 'gagalin';
+	line-height: 4rem;
+	color: #fff;
+	height: 100vh;
+	width: 5rem;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+
+.menu__item-title--meat {
+	background-image: url(../img/menu-meat.jpg);
+}
+
+.menu__item-title--vegeterians {
+	background-image: url(../img/menu-veg.jpg);
+}
+
+.menu__item-title--diet {
+	background-image: url(../img/menu-diet.jpg);
+}
+
+.menu__item--active .menu__item-content {
+	width: 33.75rem;} 
+
+.menu__item--active .menu__item-title {
+	color:#f9b43b;
+	}
+
+.menu__item-title h2 {
+	transform: rotate(-90deg);
+	display: block;
+	width: 100vh;
+	height: 100vh;
+}
+
+
+.menu__item-content {
+	background-color: rgba(49, 49, 50, .93);
+	width: 0rem;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.menu__item-text {
+	width: 33.75rem;
+	padding: 3.75rem 1.875rem 0;
+	font-size: 0.875rem;
+	font-family: 'ubuntulight';
+	line-height: 1.5rem;
+	color: #fff;
+}
+
 
 // sixth Section
 
 .sixth-section {
-	height: 100vh;
 	background-color: #333333;
 }
 
@@ -712,146 +823,11 @@ h2 {
 	background-color: #1f2122;
 }
 
-		// Fifth section 
-
-
-.fifth-section {
-	min-height: 100vh;
-	background-image: url(../img/menu-bg.jpg);
-	background-size: cover;
-	overflow: hidden;
-	position: relative;
-}
-
-.section__title--fifth-section {
-	color:#fff;
-	margin-top: 5%;
-	margin-left: 5%;
-
-}
-
-.menu {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-
-}
-
-.menu__list {
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-}
-
-.menu__link {
-	text-decoration: none;
-	transition: all .2s;
-	&:hover {
-		transform: scale(1.2);
-	}
-	
-}
-
-.menu__item {
-	height: 100vh;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-
-}
-
-.menu__item-title {
-	box-shadow:inset 0 0 0 125rem rgba(0,0,0,.7);
-	font-size: 2.5rem;
-	width: 4.375rem;
-	padding-left: 0.5625rem;
-	font-family: 'gagalin';
-	line-height: 4rem;
-	color: #fff;
-	height: 100vh;
-	width: 5rem;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-	text-align: center;
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-
-
-}
-
-
-
-.menu__item-title--meat {
-	background-image: url(../img/menu-meat.jpg);
-}
-
-.menu__item-title--vegeterians {
-	background-image: url(../img/menu-veg.jpg);
-}
-
-.menu__item-title--diet {
-	background-image: url(../img/menu-diet.jpg);
-}
-
-.menu__item--active .menu__item-content {
-	width: 33.75rem;} 
-
-.menu__item--active .menu__item-title {
-	color:#f9b43b;
-	}
-
-.menu__item-title h2 {
-	transform: rotate(-90deg);
-	display: block;
-	width: 100vh;
-	height: 100vh;
-}
-
-
-.menu__item-content {
-	background-color: rgba(49, 49, 50, .93);
-	width: 0rem;
-	height: 100vh;
-	overflow: hidden;
-}
-
-.menu__item-text {
-	width: 33.75rem;
-	padding: 3.75rem 1.875rem 0;
-	font-size: 0.875rem;
-	font-family: 'ubuntulight';
-	line-height: 1.5rem;
-	color: #fff;
-}
-
-
 
 // Seventh section
 
 .seventh-section {
-	min-height: 100vh;
 	background-image: url(../img/form-bg.jpg);
-	background-size: cover;
-	overflow: hidden;
-	position: relative;
-	position: relative;	
 }
 
 .seventh-section__title {
@@ -1047,11 +1023,7 @@ input[type="checkbox"]:checked + label span {
 // Eigth section
 
 .eights-section {
-	min-height: 100vh;
 	background-image: url(../img/map.jpg);
-	background-size: cover;
-	overflow: hidden;
-	position: relative;
 }
 
 

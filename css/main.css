@@ -1607,10 +1607,14 @@ h2 {
   padding: 0;
   border: 0; }
 
-.first-section {
+.section {
   min-height: 100vh;
-  background-image: url(../img/first-bg.jpg);
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden;
+  position: relative; }
+
+.first-section {
+  background-image: url(../img/first-bg.jpg); }
 
 .first-section__content {
   max-width: 58.75rem;
@@ -1813,11 +1817,7 @@ h2 {
   animation-duration: .2s; }
 
 .second-section {
-  min-height: 100vh;
-  background-image: url(../img/vegetables.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative; }
+  background-image: url(../img/vegetables.jpg); }
 
 .second-section__title {
   padding-top: 0.9375rem;
@@ -1904,11 +1904,7 @@ h2 {
       font-size: 0.625rem; } }
 
 .fourth-section {
-  min-height: 100vh;
-  background-image: url(../img/team.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative; }
+  background-image: url(../img/team.jpg); }
 
 .fourth-section__content {
   position: absolute;
@@ -2022,8 +2018,105 @@ h2 {
   font-family: 'ubuntulight';
   line-height: 1.5rem; }
 
-.sixth-section {
+.fifth-section {
+  background-image: url(../img/menu-bg.jpg); }
+
+.section__title--fifth-section {
+  color: #fff;
+  margin-top: 5%;
+  margin-left: 5%; }
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
   height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+.menu__list {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.menu__link {
+  text-decoration: none;
+  transition: all .2s; }
+  .menu__link:hover {
+    transform: scale(1.2); }
+
+.menu__item {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.menu__item-title {
+  box-shadow: inset 0 0 0 125rem rgba(0, 0, 0, 0.7);
+  font-size: 2.5rem;
+  width: 4.375rem;
+  padding-left: 0.5625rem;
+  font-family: 'gagalin';
+  line-height: 4rem;
+  color: #fff;
+  height: 100vh;
+  width: 5rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+
+.menu__item-title--meat {
+  background-image: url(../img/menu-meat.jpg); }
+
+.menu__item-title--vegeterians {
+  background-image: url(../img/menu-veg.jpg); }
+
+.menu__item-title--diet {
+  background-image: url(../img/menu-diet.jpg); }
+
+.menu__item--active .menu__item-content {
+  width: 33.75rem; }
+
+.menu__item--active .menu__item-title {
+  color: #f9b43b; }
+
+.menu__item-title h2 {
+  transform: rotate(-90deg);
+  display: block;
+  width: 100vh;
+  height: 100vh; }
+
+.menu__item-content {
+  background-color: rgba(49, 49, 50, 0.93);
+  width: 0rem;
+  height: 100vh;
+  overflow: hidden; }
+
+.menu__item-text {
+  width: 33.75rem;
+  padding: 3.75rem 1.875rem 0;
+  font-size: 0.875rem;
+  font-family: 'ubuntulight';
+  line-height: 1.5rem;
+  color: #fff; }
+
+.sixth-section {
   background-color: #333333; }
 
 .reviews {
@@ -2125,115 +2218,8 @@ h2 {
 .reviews__detail:hover {
   background-color: #1f2122; }
 
-.fifth-section {
-  min-height: 100vh;
-  background-image: url(../img/menu-bg.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative; }
-
-.section__title--fifth-section {
-  color: #fff;
-  margin-top: 5%;
-  margin-left: 5%; }
-
-.menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  margin: 0;
-  padding: 0; }
-
-.menu__list {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex; }
-
-.menu__link {
-  text-decoration: none;
-  transition: all .2s; }
-  .menu__link:hover {
-    transform: scale(1.2); }
-
-.menu__item {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex; }
-
-.menu__item-title {
-  box-shadow: inset 0 0 0 125rem rgba(0, 0, 0, 0.7);
-  font-size: 2.5rem;
-  width: 4.375rem;
-  padding-left: 0.5625rem;
-  font-family: 'gagalin';
-  line-height: 4rem;
-  color: #fff;
-  height: 100vh;
-  width: 5rem;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  text-align: center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden; }
-
-.menu__item-title--meat {
-  background-image: url(../img/menu-meat.jpg); }
-
-.menu__item-title--vegeterians {
-  background-image: url(../img/menu-veg.jpg); }
-
-.menu__item-title--diet {
-  background-image: url(../img/menu-diet.jpg); }
-
-.menu__item--active .menu__item-content {
-  width: 33.75rem; }
-
-.menu__item--active .menu__item-title {
-  color: #f9b43b; }
-
-.menu__item-title h2 {
-  transform: rotate(-90deg);
-  display: block;
-  width: 100vh;
-  height: 100vh; }
-
-.menu__item-content {
-  background-color: rgba(49, 49, 50, 0.93);
-  width: 0rem;
-  height: 100vh;
-  overflow: hidden; }
-
-.menu__item-text {
-  width: 33.75rem;
-  padding: 3.75rem 1.875rem 0;
-  font-size: 0.875rem;
-  font-family: 'ubuntulight';
-  line-height: 1.5rem;
-  color: #fff; }
-
 .seventh-section {
-  min-height: 100vh;
-  background-image: url(../img/form-bg.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-  position: relative; }
+  background-image: url(../img/form-bg.jpg); }
 
 .seventh-section__title {
   margin-top: 1.6875rem;
@@ -2391,11 +2377,7 @@ input[type="checkbox"]:checked + label span {
   width: 100%; }
 
 .eights-section {
-  min-height: 100vh;
-  background-image: url(../img/map.jpg);
-  background-size: cover;
-  overflow: hidden;
-  position: relative; }
+  background-image: url(../img/map.jpg); }
 
 .footer {
   bottom: 0;
