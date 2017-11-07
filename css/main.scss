@@ -24,6 +24,12 @@ li {
 	padding: 0;
 }
 
+h2 {
+	font-weight: normal;
+	margin: 0;
+	font-size: 2.5rem;
+}
+
 .wrapper {
 }
 
@@ -368,6 +374,7 @@ li {
 
 .second-section-advantages__title {
 	font-family: 'lifehack';
+	font-weight: normal;
 	font-size: 1.5rem;
 	color: #2f3234;
 	margin-bottom: 0.8125rem;
@@ -766,7 +773,7 @@ li {
 	color:#f9b43b;
 	}
 
-.menu__item-title span {
+.menu__item-title h2 {
 	transform: rotate(-90deg);
 	display: block;
 	width: 100vh;
