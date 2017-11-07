@@ -1,3 +1,7 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 * {
   box-sizing: border-box; }
 
@@ -30,7 +34,7 @@ li {
   position: relative; }
 
 .header-menu {
-  padding-top: 0.625rem;
+  margin-top: 0.625rem;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -320,8 +324,7 @@ li {
 .team__list {
   margin-top: 3.75rem;
   list-style-type: none;
-  padding-left: 0;
-  padding-top: 0.625rem; }
+  padding-left: 0; }
 
 .fourth-section-team__title {
   color: #f9b43b;
@@ -853,5 +856,3 @@ input[type="checkbox"]:checked + label span {
 
 .footer-socials__item:first-child {
   margin-left: 0; }
-
-/*# sourceMappingURL=main.css.map */

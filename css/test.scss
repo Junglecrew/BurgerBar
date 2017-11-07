@@ -1,0 +1,9 @@
+$color: #f0;
+
+body {
+	background-color: $color;
+	a {
+		color: lightnen($color, 20%);
+
+	}
+}

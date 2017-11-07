@@ -1,0 +1,4 @@
+body {
+  background-color: #f0; }
+  body a {
+    color: lightnen(#f0, 20%); }
