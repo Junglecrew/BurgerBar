@@ -2137,7 +2137,8 @@ h2 {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 650px; }
 
 .reviews__item {
   display: inline-block;
