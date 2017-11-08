@@ -1902,9 +1902,6 @@ h2 {
   font-family: 'ubuntulight';
   font-size: 0.875rem;
   line-height: 1.5rem; }
-  @media screen and (max-width: 30rem) {
-    .second-section-advantages__descr {
-      font-size: 0.625rem; } }
 
 .fourth-section {
   background-image: url(../img/team.jpg); }
@@ -2073,6 +2070,7 @@ h2 {
   line-height: 4rem;
   color: #fff;
   height: 100vh;
+  min-height: 40.625rem;
   width: 5rem;
   display: -webkit-flex;
   display: -moz-flex;
@@ -2112,6 +2110,7 @@ h2 {
   background-color: rgba(49, 49, 50, 0.93);
   width: 0rem;
   height: 100vh;
+  min-height: 40.625rem;
   overflow: hidden; }
 
 .menu__item-text {
@@ -2226,6 +2225,9 @@ h2 {
 
 .seventh-section {
   background-image: url(../img/form-bg.jpg); }
+  @media screen and (max-width: 30rem) {
+    .seventh-section {
+      height: initial; } }
 
 .seventh-section__title {
   margin-top: 1.6875rem;
