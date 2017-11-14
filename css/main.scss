@@ -395,9 +395,9 @@ h2 {
 .arrow-down {
 	text-align: center;
 	margin-bottom: 1.5625rem;
- // @include phones() {
-	// display: none;
-	//   }	
+ @include phones() {
+	display: none;
+	  }	
 
 }
 
@@ -1446,6 +1446,14 @@ input[type="checkbox"]:checked + label span {
 	font-size: 0.875rem;
 	line-height: 0.875rem;
 }
+
+.footer-content__phone-link {
+	color: #b13f21;
+	text-decoration: none;
+	
+	&:visited {
+	color: #b13f21;
+}}
 
 .footer-content__phone::before {
 	content: url('../img/icons/phone.svg');
