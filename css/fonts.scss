@@ -3,7 +3,7 @@
     src: url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
          url('../fonts/ubuntu-b-webfont.woff') format('woff'),
          url('../fonts/ubuntu-b-webfont.ttf') format('truetype');
-    font-weight: bold;
+    // font-weight: bold;
     font-style: normal;
 
 }
@@ -65,7 +65,8 @@
 
 @font-face {
     font-family: 'gagalin';
-    src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
+    src: 
+    url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
          url('../fonts/gagalin-regular-webfont.woff') format('woff'),
          url('../fonts/gagalin-regular-webfont.ttf') format('truetype');
     font-weight: normal;

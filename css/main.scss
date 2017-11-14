@@ -357,6 +357,8 @@ h2 {
 .section__title {
 	font-size: 4.5rem;
 	font-family: 'gagalin';
+	font-weight: normal;
+	
  @include phones() {
 	font-size: 3.125rem;
 	margin-top: 0;
@@ -552,13 +554,26 @@ h2 {
 	border-radius: 0.25rem;
 	background-color: #f08c33;
 	text-align: center;	
+  @include tablets() {
+    left: 18%;
+    top: 135px;
+  }
+
+  @include phones() {
+    left: 9px;
+    top: 50px;
+  }
 	&:hover {
 		background-color: #e35028;
 	}
 	&:hover .composition-detail {
 		display: block;
 		left: 5.625rem;
-
+		@include phones() {
+			transform: scale(.7);
+			top: 40px;
+    		left: -40px;
+		}
 	}
 }
 
@@ -658,25 +673,41 @@ h2 {
 .third-section__order {
 	margin-left: 1.875rem;
 	display: inline;
+	vertical-align: super;
+	@include phones() {
+		margin: 0;
+  }	 
 }
 
 .calories {
 	position: absolute;
 @include tablets() {
-	top: 70px;
-	right: 150px;
-  }	
+	top: 135px;
+	right: 18%;
+  }
+@include phones() {
+	top: 50px;
+	right: 10px;
+  }	  
 	
 }
 
 .third-section-side {
+	width: 50%;
 	@include tablets() {
 	text-align: center;
-	
-  }	
+	width: initial;
+	}	
 }
 .third-section-side__image {
 	margin-top: 5.9375rem;
+}
+
+.third-section-side__img {
+	width: 100%;
+	@include tablets() {
+		width: 70%;
+	}	
 }
 
 .arrow{

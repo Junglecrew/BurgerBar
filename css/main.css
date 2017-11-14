@@ -512,7 +512,6 @@ template {
 @font-face {
   font-family: 'ubuntubold';
   src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff"), url("../fonts/ubuntu-b-webfont.ttf") format("truetype");
-  font-weight: bold;
   font-style: normal; }
 
 @font-face {
@@ -3247,7 +3246,8 @@ h2 {
 
 .section__title {
   font-size: 4.5rem;
-  font-family: 'gagalin'; }
+  font-family: 'gagalin';
+  font-weight: normal; }
   @media screen and (max-width: 30rem) {
     .section__title {
       font-size: 3.125rem;
@@ -3437,11 +3437,25 @@ h2 {
   border-radius: 0.25rem;
   background-color: #f08c33;
   text-align: center; }
+  @media screen and (max-width: 48rem) {
+    .composition {
+      left: 18%;
+      top: 135px; } }
+  @media screen and (max-width: 30rem) {
+    .composition {
+      left: 9px;
+      top: 50px; } }
   .composition:hover {
     background-color: #e35028; }
   .composition:hover .composition-detail {
     display: block;
     left: 5.625rem; }
+    @media screen and (max-width: 30rem) {
+      .composition:hover .composition-detail {
+        -webkit-transform: scale(0.7);
+                transform: scale(0.7);
+        top: 40px;
+        left: -40px; } }
 
 .composition-detail {
   position: absolute;
@@ -3518,21 +3532,38 @@ h2 {
 
 .third-section__order {
   margin-left: 1.875rem;
-  display: inline; }
+  display: inline;
+  vertical-align: super; }
+  @media screen and (max-width: 30rem) {
+    .third-section__order {
+      margin: 0; } }
 
 .calories {
   position: absolute; }
   @media screen and (max-width: 48rem) {
     .calories {
-      top: 70px;
-      right: 150px; } }
+      top: 135px;
+      right: 18%; } }
+  @media screen and (max-width: 30rem) {
+    .calories {
+      top: 50px;
+      right: 10px; } }
 
-@media screen and (max-width: 48rem) {
-  .third-section-side {
-    text-align: center; } }
+.third-section-side {
+  width: 50%; }
+  @media screen and (max-width: 48rem) {
+    .third-section-side {
+      text-align: center;
+      width: initial; } }
 
 .third-section-side__image {
   margin-top: 5.9375rem; }
+
+.third-section-side__img {
+  width: 100%; }
+  @media screen and (max-width: 48rem) {
+    .third-section-side__img {
+      width: 70%; } }
 
 .arrow {
   min-width: 5rem;
