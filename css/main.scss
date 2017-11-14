@@ -71,11 +71,11 @@ h2 {
 
 // First Section
 
-.first-section {
+.first-screen {
 	background-image: url(../img/first-bg.jpg);
 }
 
-.first-section__content {
+.first-screen__content {
 	max-width: 58.75rem;
 	margin: 0 auto;
 	display: flex;
@@ -310,7 +310,7 @@ h2 {
 }
 
 
-.first-section__main-content {
+.first-screen__main-content {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -329,21 +329,21 @@ h2 {
   }	
 	}
 
-.first-section__burger {
+.first-screen__burger {
 	margin-top: -0.625rem;
 @include phones() {
 	transform: scale(.8);
   }	
 }
 
-.first-section__image {
+.first-screen__image {
  @include phones() {
 	max-width: 100%;
   }	
 
 }
 
-.first-section__descr {
+.first-screen__descr {
 	margin-left: 0.8125rem;
 	padding-top: 4.875rem;
 
@@ -365,7 +365,7 @@ h2 {
   }	
 }
 
-.first-section__title {
+.first-screen__title {
  @include phones() {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -377,7 +377,7 @@ h2 {
 	color: #f9b43b;
 }
 
-.first-section__main-text {
+.first-screen__main-text {
 	font-size: 4.0625rem;
 	line-height: 3.75rem;
 	margin-top: 1.25rem;
@@ -395,9 +395,9 @@ h2 {
 .arrow-down {
 	text-align: center;
 	margin-bottom: 1.5625rem;
- @include phones() {
-	display: none;
-	  }	
+ // @include phones() {
+	// display: none;
+	//   }	
 
 }
 
@@ -407,22 +407,29 @@ h2 {
 
 // Second Section
 
-.second-section {
+.we {
 	background-image: url(../img/vegetables.jpg);
 	display: flex;
 	height: 100vh;
-	min-height: 40.625rem;
+	min-height: 63.625rem;
 	flex-direction: column;
 	justify-content: space-around;
+ 	@include phones() {
+		justify-content: flex-start;
+	  }		
 }
 
-.second-section__content {
+.we__content {
 
 }
 
-.second-section__title {
+.we__title {
 	padding-top: 0.9375rem;
 	text-align: center;
+ 	@include phones() {
+		margin: 60px 0 85px 0;
+		padding-top: 0;
+	  }		
 
 	
 }
@@ -432,7 +439,7 @@ h2 {
 
 }
 
-.second-section-advantages {
+.we-advantages {
 
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -445,14 +452,15 @@ h2 {
 
 }
 
-.second-section-advantages__text {
+.we-advantages__text {
 	text-align: center;
 @include phones() {
 	text-align: left;
+	margin-left: 16px;
   }	
 }
 
-.second-section-advantages__list {
+.we-advantages__list {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -470,8 +478,10 @@ h2 {
   }	
  @include phones() {
     flex-direction: column;
-    margin:0 auto; 
+    margin:0;
+    padding: 0;
     align-items:baseline;
+    width: 100%;
 
   }	
 	
@@ -479,30 +489,40 @@ h2 {
 }
 
 
-.second-section-advantages__item {
+.we-advantages__item {
 	max-width: 18.75rem;
 	margin-right: 1.875rem;
 	display: flex;
 	flex-direction: column;
+	&:last-child {
+	margin-right: 0;		
+	}
  @include phones() {
     flex-direction: row;
-   	margin-right: 0;
-
+   	margin-right: 10px;
+   	margin-left: 23px;
+   	margin-bottom: 55px;
+	max-width: 100%;
+	&:last-child {
+	margin-right: 10px;		
+	}
   }	
 }
 
-
-.second-section-advantages__item:last-child {
-	margin-right: 0;
-}
-
-.second-section-advantages__visual {
+.we-advantages__visual {
+	min-width: 6.0625rem;
 	margin-bottom: 1.875rem;
 	text-align: center;
-	
+	img {
+		text-align: center;
+	}
+@include phones() {
+	// margin-left: 23px;
+
+  }		
 }
 
-.second-section-advantages__title {
+.we-advantages__title {
 	font-family: 'lifehack';
 	font-weight: normal;
 	font-size: 1.5rem;
@@ -510,15 +530,15 @@ h2 {
 	margin-bottom: 0.8125rem;
 }
 
-.second-section-advantages__descr {
+.we-advantages__descr {
 	font-family: 'ubuntulight';
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 }
 
-// Third Section
+// burgers Section
 
-.third-section {
+.burgers-section {
 	background: rgb(249,180,59);
 	background: -moz-linear-gradient(top, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
 	background: -webkit-linear-gradient(top, rgb(249,180,59) 0%,rgb(235,140,56) 48%,rgb(249,180,59) 74%);
@@ -527,20 +547,19 @@ h2 {
 	display: flex;
 	flex-direction:column;
 	justify-content: space-around;
+	min-height: 51.5rem;
 	} 
 
-.third-section-content {
+.burgers-section-content {
 	display: flex;
 	justify-content: space-between;
 	max-width: 69.375rem;
 	margin: 0 auto;
-
-
 }
 
 
 
-.third-section__item {
+.burgers-section__item {
 	display: flex;
 	flex-direction:row;
 	// height: 30.125rem;
@@ -642,12 +661,12 @@ h2 {
 
 
 
-.third-section--title {
+.burgers--title {
 	color: #fff;
 	margin: 0 0 1.25rem;
 }
 
-.third-section__descr {
+.burgers-section__descr {
 	font-family: 'ubuntulight';
 	font-size: 0.875rem;
 	color: #fff;
@@ -655,11 +674,11 @@ h2 {
 	margin-bottom: 2.5rem;
 }
 
-.third-section__price {
+.burgers-section__price {
 	font-family: 'Gagalin';
 	color: #e35028;
 }
-.third-section__ammount {
+.burgers-section__ammount {
 	font-size: 4.5rem;
 	letter-spacing: -.2.1875rem;
 	display: inline;
@@ -667,12 +686,12 @@ h2 {
 	
 }
 
-.third-section__currency {
+.burgers-section__currency {
 	display: inline;
 	font-size: 1.875rem;
 }
 
-.third-section__order {
+.burgers-section__order {
 	margin-left: 1.875rem;
 	display: inline;
 	vertical-align: super;
@@ -694,18 +713,18 @@ h2 {
 	
 }
 
-.third-section-side {
+.burgers-section-side {
 	width: 50%;
 	@include tablets() {
 	text-align: center;
 	width: initial;
 	}	
 }
-.third-section-side__image {
+.burgers-section-side__image {
 	margin-top: 5.9375rem;
 }
 
-.third-section-side__img {
+.burgers-section-side__img {
 	width: 100%;
 	@include tablets() {
 		width: 70%;
@@ -726,14 +745,14 @@ h2 {
 	margin: 0 auto;
 	
 }
-// fourth Section
+// team Section
 
-.fourth-section {
+.team-section {
 	background-image: url(../img/team.jpg);
 
 }
 
-.fourth-section__content {
+.team-section__content {
 	position: absolute;
 	right: 0;
 	height: 100%;
@@ -753,7 +772,7 @@ h2 {
   }	
 }
 
-.fourth-section-team {
+.team-section-team {
 	margin-left: 5rem;
  @include tablets() {
 	margin-left: 0;
@@ -767,7 +786,7 @@ h2 {
 	// padding-top: 0.625rem;
 }
 
-.fourth-section-team__title {
+.team-section-team__title {
 	color:#f9b43b;
 	margin-top: -1.875rem;
 }
@@ -874,14 +893,14 @@ h2 {
 }
 
 
-// fifth Section
+// menu Section
 
 
-.fifth-section {
+.menu-section {
 	background-image: url(../img/menu-bg.jpg);
 }
 
-.section__title--fifth-section {
+.section__title--menu-section {
 	position: absolute;
 	color:#fff;
 	margin-top: 5%;
@@ -1011,9 +1030,9 @@ h2 {
 }
 
 
-// sixth Section
+// reviews Section
 
-.sixth-section {
+.reviews-section {
 	background-color: #333333;
 }
 
@@ -1092,10 +1111,10 @@ h2 {
 	font-size: 0.875rem;
 	// line-height: 28.0.6875rem;
 	font-family: 'gagalin';
-	margin: 3.125rem 0 1.25rem 1.25rem;
+	margin: 3.125rem 1.25rem 1.25rem 1.25rem;
  @include tablets() {
 	text-align: center;
-	margin: 1.25rem 0 1.25rem 1.25rem;
+	margin: 1.25rem 1.25rem 1.25rem 1.25rem;
   }	
  @include phones() {
 	margin-top: 2.5rem;
@@ -1141,9 +1160,9 @@ h2 {
 }
 
 
-// Seventh section
+// form section
 
-.seventh-section {
+.form-section {
 	background-image: url(../img/form-bg.jpg);
 	height: 100vh;
 	min-height: 40.625rem;
@@ -1155,7 +1174,7 @@ h2 {
   }	
 }
 
-.seventh-section__title {
+.form-section__title {
 	margin-top: 1.6875rem;
 	margin-bottom: 1.3125rem;
  @include tablets() {
@@ -1163,7 +1182,7 @@ h2 {
   }	
 }
 
-.seventh-section__form {
+.form-section__form {
 	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -1360,9 +1379,9 @@ input[type="checkbox"]:checked + label span {
 }
 
 
-// Eigth section
+// Contacts section
 
-.eights-section {
+.contacts-section {
 	background-image: url(../img/map.jpg);
 }
 
