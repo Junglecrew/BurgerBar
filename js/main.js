@@ -13,14 +13,14 @@
       $(this).addClass('team__member--active');
      });
 
-    $('.header-menu__burger-link').click(
+    $('.burger-menu__link').click(
       function(){
-        $('.header-menu-nav-mobile').css('right', '0px');
+        $('.nav-mobile').css('right', '0px');
     })
 
-    $('.header-menu-nav-mobile__btn').click(
+    $('.nav-mobile__btn').click(
       function() {
-        $('.header-menu-nav-mobile').css('right', '999px');
+        $('.nav-mobile').css('right', '999px');
       })
 
 })
