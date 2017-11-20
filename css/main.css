@@ -2979,7 +2979,7 @@ h2 {
 
 .section {
   max-height: 100vh;
-  min-height: 568px;
+  min-height: 444px;
   background-size: cover;
   overflow: hidden;
   position: relative; }
@@ -2988,7 +2988,7 @@ h2 {
   background-image: url(../img/first-bg.jpg); }
 
 .first-screen__content {
-  max-width: 58.75rem;
+  max-width: 61.75rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3321,10 +3321,11 @@ h2 {
 
 .we__title {
   padding-top: 0.9375rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
   @media screen and (max-width: 30rem) {
     .we__title {
-      margin: 10px;
+      margin-bottom: 10px;
       padding-top: 0; } }
 
 .section__title--black {
@@ -3453,7 +3454,7 @@ h2 {
   width: 100%;
   margin: 0 auto;
   max-width: 1100px;
-  max-height: 568px; }
+  min-height: 568px; }
 
 .burgers-section-content {
   display: -webkit-box;
@@ -3482,7 +3483,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 400%;
   position: absolute;
   top: 0;
   left: 0; }
@@ -3522,11 +3522,12 @@ h2 {
 .slider__content {
   overflow: hidden;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  height: 67vh; }
   @media screen and (max-width: 48rem) {
     .slider__content {
       overflow: initial;
-      height: 700px; } }
+      height: 800px; } }
 
 .slider__controls {
   position: absolute;
@@ -3612,7 +3613,8 @@ h2 {
 .burgers-section--title {
   color: #fff;
   margin: 0 0 2.25rem;
-  line-height: 4rem; }
+  line-height: 4rem;
+  overflow: hidden; }
   @media screen and (max-width: 30rem) {
     .burgers-section--title {
       font-size: 2.125rem;
@@ -3666,11 +3668,13 @@ h2 {
 
 .burgers-section-side {
   width: 50%;
-  position: relative; }
+  position: relative;
+  margin-right: 10px; }
   @media screen and (max-width: 48rem) {
     .burgers-section-side {
       text-align: center;
-      width: initial; } }
+      width: initial;
+      margin-bottom: 20px; } }
 
 .burgers-section-side__image {
   margin-top: 5.9375rem; }
@@ -3866,9 +3870,8 @@ h2 {
   text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s; }
-  .menu__link:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+  .menu__link:hover .menu__item-title {
+    color: #f9b43b; }
   @media screen and (max-width: 27.5rem) {
     .menu__link {
       width: 40px; }
@@ -3926,6 +3929,11 @@ h2 {
 .menu__item-title--diet {
   background-image: url(../img/menu-diet.jpg); }
 
+.menu__item--active .menu__item-text {
+  opacity: 1;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s; }
+
 .menu__item--active .menu__item-content {
   width: 33.75rem;
   display: block; }
@@ -3958,15 +3966,16 @@ h2 {
   height: 100vh;
   min-height: 568px;
   overflow: hidden;
-  -webkit-transition: .2s;
-  transition: .2s; }
+  -webkit-transition: .6s;
+  transition: .6s; }
 
 .menu__item-text {
   padding: 3.75rem 1.875rem 0;
   font-size: 0.875rem;
   font-family: 'ubuntulight';
   line-height: 1.5rem;
-  color: #fff; }
+  color: #fff;
+  opacity: 0; }
   @media screen and (max-width: 27.5rem) {
     .menu__item-text {
       padding: 0;
@@ -4098,11 +4107,14 @@ h2 {
 
 .form-section__title {
   margin-top: 1.6875rem;
-  margin-bottom: 1.3125rem; }
+  margin-bottom: 4.3125rem; }
   @media screen and (max-width: 48rem) {
     .form-section__title {
       text-align: center; } }
-  @media screen and (max-width: 48rem) {
+  @media screen and (max-width: 30rem) {
+    .form-section__title {
+      margin-bottom: 1.3125rem; } }
+  @media screen and (max-width: 30rem) {
     .form-section__title .section__title {
       font-size: 33px; } }
 
@@ -4390,8 +4402,8 @@ input[type="checkbox"]:checked + label span {
 
 .navigation__dots {
   position: fixed;
-  right: 6.25rem;
-  top: 6.25rem;
+  right: 48px;
+  top: 70px;
   z-index: 3; }
   @media screen and (max-width: 48rem) {
     .navigation__dots {
@@ -4403,7 +4415,7 @@ input[type="checkbox"]:checked + label span {
 
 .navigation__item div {
   margin-right: 0.3125rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 15px;
   border: 0.25rem solid #fff;
   content: "";
   border-radius: 50%;
