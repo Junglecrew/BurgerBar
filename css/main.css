@@ -3086,7 +3086,7 @@ h2 {
   width: 100%;
   z-index: 999;
   height: 100vh;
-  min-height: 568px;
+  min-height: 650px;
   -webkit-transition: 1s cubic-bezier(0, 0, 0, 0.97);
   transition: 1s cubic-bezier(0, 0, 0, 0.97);
   background-color: rgba(47, 50, 52, 0.99);
@@ -3302,7 +3302,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   max-height: 100vh;
-  min-height: 568px;
+  min-height: 650px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3317,7 +3317,7 @@ h2 {
       background-image: url(../img/vegetables-phones.jpg); } }
 
 .we__content {
-  min-height: 568px; }
+  min-height: 650px; }
 
 .we__title {
   padding-top: 0.9375rem;
@@ -3447,14 +3447,14 @@ h2 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 568px; }
+  min-height: 650px; }
 
 .burgers-container {
   position: relative;
   width: 100%;
   margin: 0 auto;
   max-width: 1100px;
-  min-height: 568px; }
+  min-height: 650px; }
 
 .burgers-section-content {
   display: -webkit-box;
@@ -3526,8 +3526,7 @@ h2 {
   height: 67vh; }
   @media screen and (max-width: 48rem) {
     .slider__content {
-      overflow: initial;
-      height: 800px; } }
+      overflow: initial; } }
 
 .slider__controls {
   position: absolute;
@@ -3964,7 +3963,7 @@ h2 {
   background-color: rgba(49, 49, 50, 0.93);
   width: 0;
   height: 100vh;
-  min-height: 568px;
+  min-height: 650px;
   overflow: hidden;
   -webkit-transition: .6s;
   transition: .6s; }
@@ -4000,7 +3999,7 @@ h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100vh;
-  min-height: 568px; }
+  min-height: 650px; }
 
 .reviews__item {
   display: inline-block;
@@ -4091,7 +4090,7 @@ h2 {
 .form-section {
   background-image: url(../img/form-bg.jpg);
   height: 100vh;
-  min-height: 568px;
+  min-height: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
