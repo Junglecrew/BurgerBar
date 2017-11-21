@@ -69,7 +69,6 @@
           //   // '-webkit-transition-delay': '0'
 
           // });
-          console.log('работает')
           $('.menu__item').removeClass('menu__item--active');
 
         } else {
