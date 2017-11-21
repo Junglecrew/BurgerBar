@@ -65,7 +65,8 @@
           $('.menu__item').removeClass('menu__item--active');
           $('.menu__item-text').css({
             'transition': '0',
-            'transition-delay': '0'
+            'transition-delay': '0',
+            '-webkit-transition-delay'
           });
         }
         else {
