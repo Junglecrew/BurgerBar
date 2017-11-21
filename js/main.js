@@ -62,15 +62,15 @@
         e.preventDefault();
         //Проверка, есть ли активный класс у родителя ссылки, чтобы можно было закрыть все элементы.
         if ($(this).parent().hasClass('menu__item--active')) {
-          $('.menu__item').removeClass('menu__item--active');
           $('.menu__item-text').css({
             'transition': '0',
             '-webkit-transition': '0',
             'transition-delay': '0',
             '-webkit-transition-delay': '0'
           });
-        }
-        else {
+          $('.menu__item').removeClass('menu__item--active');
+
+        } else {
           $('.menu__item').removeClass('menu__item--active');
            // Убирает у остальных элементов класс активный.
           $(this).parent().addClass('menu__item--active');
