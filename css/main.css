@@ -3129,7 +3129,8 @@ h2 {
               flex-direction: column;
       text-align: center;
       -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+          justify-content: space-around;
+      margin-top: -130px; } }
 
 .nav-mobile__item {
   display: block;
@@ -3153,6 +3154,9 @@ h2 {
     margin: 1.6875rem auto 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+    @media screen and (max-width: 30rem) {
+      .nav-mobile__item:after {
+        margin: 0.625rem auto 0; } }
   .nav-mobile__item:last-child:after {
     display: none; }
 
