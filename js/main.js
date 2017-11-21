@@ -2,7 +2,8 @@
 
     $('#fullpage').fullpage({
       menu: '#menu',
-      responsiveHeight: 651
+      responsiveHeight: 651,
+      verticalCentered:false
     });
 
     // Определение ширины слайдера в % в зависимости от количества слайдов
