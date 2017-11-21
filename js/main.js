@@ -26,6 +26,7 @@
         $('.nav-mobile').css('right', '0px'); //меню появляется слева на полный экран
         $.fn.fullpage.setAllowScrolling(false); // запрет на скрол мышкой при открытом меню
         $.fn.fullpage.setKeyboardScrolling(false, 'down'); // запрет на скрол с клавиатуры при открытом меню
+        $("body").css("overflow","hidden");
       });
 
     $('.nav-mobile__btn').click(
@@ -33,6 +34,7 @@
         $('.nav-mobile').css('right', '999px');
         $.fn.fullpage.setAllowScrolling(true); // снятие запрета на скрол мышкой
         $.fn.fullpage.setKeyboardScrolling(true, 'down'); // снятие запрета на скрол клавиатурой
+        $("body").css("overflow","auto");
       });
 
     // Анимация стрелки вниз
