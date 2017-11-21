@@ -3856,6 +3856,7 @@ h2 {
 
 .menu__list {
   height: 100vh;
+  min-height: 650px;
   margin: 0;
   padding: 0;
   display: -moz-flex;
@@ -3880,6 +3881,7 @@ h2 {
 
 .menu__item {
   height: 100vh;
+  min-height: 650px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -3895,6 +3897,7 @@ h2 {
   font-family: 'gagalin';
   line-height: 4rem;
   color: #fff;
+  height: 100vh;
   min-height: 650px;
   width: 5rem;
   display: -moz-flex;
@@ -3984,7 +3987,8 @@ h2 {
   background-color: #333333; }
 
 .reviews {
-  height: 100vh; }
+  height: 100vh;
+  min-height: 650px; }
 
 .reviews__list {
   display: -moz-flex;
