@@ -180,17 +180,17 @@ h2 {
 	width: 100%;
   	z-index: 999;
 	height: 100vh;
-	min-height: 650px;
+	// min-height: 650px;
 	transition: 1s cubic-bezier(0, 0, 0, 0.97);
 	background-color: rgba(47, 50, 52, .99);
-	overflow: hidden;
+	// overflow: hidden;
 
 @include tablets() {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     right: 62.4375rem;
-	overflow: hidden;
+	// overflow: hidden;
  //    	&--closed {
 	// 	display: none;
 	// 	top: 624.938rem;
@@ -217,7 +217,7 @@ h2 {
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
-    margin-top: -130px;
+    // margin-top: -130px;
   }
 }
 
