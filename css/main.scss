@@ -30,6 +30,11 @@ html, body {
 -moz-osx-font-smoothing: grayscale;
 }
 
+.fixed {
+	position:fixed; 
+	width:100%; 
+}
+
 * {
 	box-sizing: border-box;
 }
