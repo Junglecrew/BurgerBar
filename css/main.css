@@ -3159,6 +3159,8 @@ h2 {
         margin: 0.625rem auto 0; } }
   .nav-mobile__item:last-child:after {
     display: none; }
+  .nav-mobile__item:first-child {
+    margin-top: 0; }
 
 .nav-mobile__link {
   text-decoration: none;

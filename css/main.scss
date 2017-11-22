@@ -232,9 +232,9 @@ h2 {
 	margin-top: 1.6875rem;
 	font-family: 'ubunturegular';
 	font-size: 1.5rem;
-@include phones() {
-	margin-top: 0.6875rem;
-  }
+	@include phones() {
+		margin-top: 0.6875rem;
+	}
     &:after {
 		display: flex;
 	    vertical-align: middle;
@@ -249,8 +249,12 @@ h2 {
 	    margin: 1.6875rem auto 0;
 	    -webkit-box-sizing: border-box;
 	    box-sizing: border-box; }
-	 &:last-child:after {
-	 	display: none;
+	&:last-child:after {
+		display: none;
+	}
+	&:first-child {
+		margin-top: 0;
+
 	 	
 	 }
 
