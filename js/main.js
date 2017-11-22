@@ -4,26 +4,16 @@
       menu: '#menu',
       responsiveHeight: 651,
       verticalCentered:false,
-      // fixedElements: '.nav-mobile'
     });
 
-    // Определение ширины слайдера в % в зависимости от количества слайдов
-    // $(function() {
-    //   let slider= $('.slider__list');
-    //   let sliderItemsCount = $('.slider__item').length;
-    //   let sliderWidth = sliderItemsCount * 100 + "%";
-    //   let setSliderWidth = function(element, width) {
-    //     $(element).css(width, sliderWidth);
-    //   }
+    // Запрет скроллинга при открытом меню на мобильной версии
 
-    //   setSliderWidth(slider, 'width');
-    // });
 
 
 
     // Меню для мобильной версии 
     $('.burger-menu__link').click(
-      () => {
+      function() {
         $('.nav-mobile').css('right', '0px'); //меню появляется слева на полный экран
         $.fn.fullpage.setAllowScrolling(false); // запрет на скрол мышкой при открытом меню
         $.fn.fullpage.setKeyboardScrolling(false, 'down'); // запрет на скрол с клавиатуры при открытом меню
@@ -31,7 +21,7 @@
       });
 
     $('.nav-mobile__btn').click(
-      () => {
+      function() {
         $('.nav-mobile').css('right', '999px');
         $.fn.fullpage.setAllowScrolling(true); // снятие запрета на скрол мышкой
         $.fn.fullpage.setKeyboardScrolling(true, 'down'); // снятие запрета на скрол клавиатурой
