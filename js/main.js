@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // OnePageScroll. Плагин fullpage.js
   var onePageScroll = function() {
     $('#fullpage').fullpage({
@@ -9,6 +10,11 @@ $(document).ready(function() {
     }
   onePageScroll();
 
+  //запрет или разрешение скороллинга
+  var scrollControll = function(param) {
+    $.fn.fullpage.setAllowScrolling(param);
+    $.fn.fullpage.setKeyboardScrolling(param, 'down');
+  }
 
   // Меню для мобильной версии 
   var mobileMenu = function() {
@@ -131,6 +137,59 @@ $(document).ready(function() {
     });
   };
   slider();
+
+  //Модальное окно
+
+  var showFullReview = function() {
+    // открытие модального окна
+    $('.reviews__link').click(function(e) {
+      e.preventDefault();
+        var container = $(this).closest('.reviews__info'),
+            name = container.children('.reviews__name').text(),
+            comment = container.children('.reviews__text').text();
+            showModal = function() {
+              $('.modalReview__title').text(name);
+              $('.modalReview__content').text(comment); 
+            }
+            showModal();
+
+
+      $('.modalReview').removeClass('visuallyHidden');
+      $('.navigation__dots').css('z-index', '-1');
+        scrollControll(false);
+      if (!$('.modalReview').hasClass('visuallyHidden')) {
+        //закрытие окна модальки при клике на крестик
+        $('.modalReview__close').click(function(e){
+          e.preventDefault()
+          $('.modalReview').addClass('visuallyHidden');
+          scrollControll(true);
+          $('.navigation__dots').css('z-index', '3');
+        });
+        // закрыие окна модальки при клике вне области
+        $('.modalReview').click(function(e){
+          if ($('.modalReview__container').has(e.target).length === 0) {
+            $('.modalReview').addClass('visuallyHidden');
+            scrollControll(true);
+            $('.navigation__dots').css('z-index', '3');
+          }
+        });
+      };
+
+    });
+  };
+  showFullReview();
+
+  // var shortComment = function() {
+  //   $('.reviews__item').hover(function(){
+  //     var container = $(this).children().children('.reviews__text'),
+  //         $this = $(this);
+  //     container.text(container.text().slice(0, 150) + "...");
+  //   });
+  // }
+  // shortComment();
+
+
+
 
 });
 
