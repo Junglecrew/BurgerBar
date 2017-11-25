@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     $('.burger-menu__link').click(
       function() {
-        menuControl('right', '0px');н
+        menuControl('right', '0px');
         scrollControl(false);
       });
 
