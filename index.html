@@ -20,12 +20,12 @@
 						<a class="nav-mobile__btn" href="#"><img class="nav-mobile__img" src="img/menu_close.png" alt="Close menu"></a>
 					</btn>
 					<ul class="nav-mobile__list">
-						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#we">Почему мы</a></li>
-						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#burgers">Меню</a></li>
-						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Советы</a></li>
-						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Кто мы</a></li>
-						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Свяжитесь с нами</a></li>
-						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#">Контакты</a></li>
+						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#we">о нас</a></li>
+						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#burgers">бургеры</a></li>
+						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#team">команда</a></li>
+						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#menu">меню</a></li>
+						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#reviews">отзывы</a></li>
+						<li class="nav-mobile__item"><a class="nav-mobile__link" href="#contacts">контакты</a></li>
 					</ul>
 				</div>
 				<div class="first-screen__content">
@@ -51,7 +51,7 @@
 							</ul>
 						</nav>
 						<div class="order">
-							<a class="btn order__link" href="#">Заказать</a>
+							<a class="btn order__link" href="#form">Заказать</a>
 						</div>
 						<div class="burger-menu">
 							<a href="#" class="burger-menu__link"><img class="burger-menu__img" src="img/menu.png" alt="burger-menu" ></a>
@@ -757,18 +757,18 @@
 			</section>
 																											<!-- Восьмая секция -->
 			<section class="section contacts-section" data-anchor="contacts">
+				<div id="map"></div>
 				<h2 class = "visuallyHidden"> Как нас найти(карта)</h2>
 				<ul class="addresses visuallyHidden">
-					<li>Первый адрес</li>
-					<li>Второй адрес</li>
-					<li>Третий адрес</li>
-					<li>Четвертый адрес</li>
+					<li>Московский проспект, 40</li>
+					<li>ул. Киевская, 117</li>
+					<li>Проспект Мира, 126</li>
 				</ul>
 				<footer class="footer">
 					<div class="footer-content">
 						<div class="footer-content__left">
-							<div class="footer-content__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-							<div class="footer-content__phone"><a href="tel:+78123771377" class="footer-content__phone-link"> +7 (812) 377-13-77</a></div>
+							<div class="footer-content__address">Калининград, Московский проспект, 40</div>
+							<div class="footer-content__phone"><a href="tel:+78123771377" class="footer-content__phone-link"> +7 (4012) 77-13-77</a></div>
 						</div>
 						<div class="footer-content__right">
 							<div class="footer-socials">
@@ -803,6 +803,9 @@
 	<script src="js/lib/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="references/fullpage/jquery.fullPage.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGW-quN5StSIp8rGxGixEB_Ybd2Go2HxQ&callback=initMap">
+	</script>
 
 	</div>
 </body>

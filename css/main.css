@@ -4361,7 +4361,10 @@ input[type="checkbox"]:checked + label span {
   width: 100%; }
 
 .contacts-section {
-  background-image: url(../img/map.jpg); }
+  height: 100%; }
+
+#map {
+  height: 100%; }
 
 .footer {
   bottom: 0;
@@ -4369,7 +4372,8 @@ input[type="checkbox"]:checked + label span {
   background-image: url(../img/footer-bg.jpg);
   background-position: center;
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
 
 .footer-content {
   height: 3.5625rem;

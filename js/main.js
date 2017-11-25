@@ -11,28 +11,33 @@ $(document).ready(function() {
   onePageScroll();
 
   //запрет или разрешение скороллинга
-  var scrollControll = function(param) {
+  var scrollControl = function(param) {
     $.fn.fullpage.setAllowScrolling(param);
     $.fn.fullpage.setKeyboardScrolling(param, 'down');
   }
 
   // Меню для мобильной версии 
   var mobileMenu = function() {
+    var menuControl = function(param, value) {
+      $('.nav-mobile').css(param, value);
+    }
+
     $('.burger-menu__link').click(
       function() {
-        $('.nav-mobile').css('right', '0px'); //меню появляется слева на полный экран
-        $.fn.fullpage.setAllowScrolling(false); // запрет на скрол мышкой при открытом меню
-        $.fn.fullpage.setKeyboardScrolling(false, 'down'); // запрет на скрол с клавиатуры при открытом меню
-        $("body").addClass("fixed"); //для мобильных версий
-        $("body").css("overflow","hidden"); // для тесктопа
+        menuControl('right', '0px');н
+        scrollControl(false);
       });
+
     $('.nav-mobile__btn').click(
       function() {
-        $('.nav-mobile').css('right', '999px');
-        $.fn.fullpage.setAllowScrolling(true); // снятие запрета на скрол мышкой
-        $.fn.fullpage.setKeyboardScrolling(true, 'down'); // снятие запрета на скрол клавиатурой
-        $("body").css("overflow","auto"); // для тесктопа
-        $("body").removeClass("fixed"); //для мобильных версий
+        menuControl('right', '999px');
+        scrollControl(true);
+      });
+
+    $('.nav-mobile__link').click(
+      function(){
+        menuControl('right', '999px');
+        scrollControl(true);
       });
   }
   mobileMenu();
@@ -156,20 +161,20 @@ $(document).ready(function() {
 
       $('.modalReview').removeClass('visuallyHidden');
       $('.navigation__dots').css('z-index', '-1');
-        scrollControll(false);
+        scrollControl(false);
       if (!$('.modalReview').hasClass('visuallyHidden')) {
-        //закрытие окна модальки при клике на крестик
+        //закрытие окна модалки при клике на крестик
         $('.modalReview__close').click(function(e){
           e.preventDefault()
           $('.modalReview').addClass('visuallyHidden');
-          scrollControll(true);
+          scrollControl(true);
           $('.navigation__dots').css('z-index', '3');
         });
-        // закрыие окна модальки при клике вне области
+        // закрыие окна модалки при клике вне области
         $('.modalReview').click(function(e){
           if ($('.modalReview__container').has(e.target).length === 0) {
             $('.modalReview').addClass('visuallyHidden');
-            scrollControll(true);
+            scrollControl(true);
             $('.navigation__dots').css('z-index', '3');
           }
         });
@@ -191,6 +196,43 @@ $(document).ready(function() {
 
 
 
+
+
+
 });
+
+  //Карта. googleMaps
+  function initMap() {
+    var uluru = {lat: 54.7104264, lng: 20.4522144};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: uluru,
+      draggable: false,
+      mapTypeControl: false,
+      fullscreenControl: false,
+      zoomControl: false,
+      streetViewControl: false
+    });
+    var image = 'img/map-marker.png';
+    var marker = new google.maps.Marker({
+      position: {lat: 54.7093730, lng: 20.5026030},
+      map: map,
+      title: 'Московский проспект, 40',
+      icon: image
+    });
+    var marker = new google.maps.Marker({
+      position: {lat: 54.6811190, lng: 20.4701760},
+      map: map,
+      title: 'ул. Киевская, 117',
+      icon: image
+    });
+    var marker = new google.maps.Marker({
+      position: {lat: 54.7228450, lng: 20.4634520},
+      map: map,
+      title: 'Проспект Мира, 126',
+      icon: image
+    });
+
+  }
 
 

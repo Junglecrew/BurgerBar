@@ -1628,7 +1628,11 @@ input[type="checkbox"]:checked + label span {
 // Contacts section
 
 .contacts-section {
-	background-image: url(../img/map.jpg);
+	height: 100%;
+}
+#map {
+	height: 100%;
+	width: 100%;
 }
 
 
@@ -1640,6 +1644,7 @@ input[type="checkbox"]:checked + label span {
 	-webkit-background-size: cover;
 	background-size: cover;
 	width: 100%;
+	z-index: 1000;
 
 }
 
