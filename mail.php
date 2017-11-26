@@ -39,7 +39,7 @@
 	    "Content-type: text/html; charset=UTF-8" . "\r\n";
 
 	    $mail = mail('junglecrew@gmail.com', 'Заказ', $mail_message, $headers);
-	    $data;
+	    $data = [];
 
 	    if ($mail) {
 	    	echo "done";
