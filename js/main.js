@@ -16,6 +16,23 @@ $(document).ready(function() {
     $.fn.fullpage.setKeyboardScrolling(param, 'down');
   }
 
+  var modalClose = function(modal) {
+    $('.modal__close').click(function(e){
+      e.preventDefault()
+      $(modal).addClass('visuallyHidden');
+      scrollControl(true);
+      $('.navigation__dots').css('z-index', '3');
+    });
+    // закрыие окна модалки при клике вне области
+    $(modal).click(function(e){
+      if ($('.modal__container').has(e.target).length === 0) {
+        $(modal).addClass('visuallyHidden');
+        scrollControl(true);
+        $('.navigation__dots').css('z-index', '3');
+      }
+    });
+  };
+
   // Меню для мобильной версии 
   var mobileMenu = function() {
     var menuControl = function(param, value) {
@@ -163,40 +180,60 @@ $(document).ready(function() {
       $('.navigation__dots').css('z-index', '-1');
         scrollControl(false);
       if (!$('.modalReview').hasClass('visuallyHidden')) {
-        //закрытие окна модалки при клике на крестик
-        $('.modal__close').click(function(e){
-          e.preventDefault()
-          $('.modalReview').addClass('visuallyHidden');
-          scrollControl(true);
-          $('.navigation__dots').css('z-index', '3');
-        });
-        // закрыие окна модалки при клике вне области
-        $('.modalReview').click(function(e){
-          if ($('.modal__container').has(e.target).length === 0) {
-            $('.modalReview').addClass('visuallyHidden');
-            scrollControl(true);
-            $('.navigation__dots').css('z-index', '3');
-          }
-        });
+        modalClose('.modalReview');
       };
 
     });
   };
   showFullReview();
 
-  // var shortComment = function() {
-  //   $('.reviews__item').hover(function(){
-  //     var container = $(this).children().children('.reviews__text'),
-  //         $this = $(this);
-  //     container.text(container.text().slice(0, 150) + "...");
-  //   });
-  // }
-  // shortComment();
+// Отправка сообщения от клиента на почту администратору
+  var submitForm = function (ev) {
+      ev.preventDefault();
 
+      var form = $(ev.target);
+          
+      var request = ajaxForm(form);
 
+      request.done(function(msg) {
+          var mes = msg.mes,
+              status = msg.status;
 
+          $('.modalForm').removeClass('visuallyHidden');
+          $('.navigation__dots').css('z-index', '-1');
+          scrollControl(false);
+          console.log('324324');
+          if (status === 'OK') {
+              $('.modal__content').text('Спасибо, Ваша заявка отправлена!');
+              modalClose('.modalForm');
+          } else{
+              $('.modal__content').text('Ошибка');
+              modalClose('.modalForm')
+          }
+      });
 
+      request.fail(function(jqXHR, textStatus) {
+          $('.modalForm').removeClass('visuallyHidden');
+          $('.modal__content').text('Ошибка');
+          modalClose('.modalForm');
+          // alert("Request failed: " + textStatus);
+      });
+  }
 
+  var ajaxForm = function (form) {
+
+      var url = form.attr('action'),
+          data = form.serialize();
+
+      return $.ajax({
+          type: 'POST',
+          url: url,
+          data: data,
+          dataType: 'JSON'
+      });
+  }
+
+  $('.order-form__tag').on('submit', submitForm);
 
 
 });
@@ -236,41 +273,3 @@ $(document).ready(function() {
   }
 
 
-// Отправка сообщения от клиента на почту администратору
-var submitForm = function (ev) {
-    ev.preventDefault();
-
-    var form = $(ev.target);
-        
-    var request = ajaxForm(form);
-
-    request.done(function(msg) {
-        var mes = msg.mes,
-            status = msg.status;
-        if (status === 'OK') {
-            $('.modal__content').text('Спасибо, Ваша заявка отправлена!');
-        } else{
-            $('.modal__content').text('Ошибка');
-        }
-    });
-
-    request.fail(function(jqXHR, textStatus) {
-        alert("Request failed: " + textStatus);
-    });
-}
-
-var ajaxForm = function (form) {
-
-    var url = form.attr('action'),
-        data = form.serialize();
-
-    return $.ajax({
-        type: 'POST',
-        url: url,
-        data: data,
-        dataType: 'JSON'
-    });
-
-}
-
-$('.order-form__tag').on('submit', submitForm);
