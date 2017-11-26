@@ -202,7 +202,7 @@ $(document).ready(function() {
           $('.modalForm').removeClass('visuallyHidden');
           $('.navigation__dots').css('z-index', '-1');
           scrollControl(false);
-          console.log('324324');
+
           if (status === 'OK') {
               $('.modal__content').text('Спасибо, Ваша заявка отправлена!');
               modalClose('.modalForm');
@@ -232,7 +232,7 @@ $(document).ready(function() {
           type: 'POST',
           url: url,
           data: data,
-          dataType: 'JSON'
+          // dataType: 'JSON'
       });
   }
 
