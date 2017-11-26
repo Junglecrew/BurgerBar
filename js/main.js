@@ -215,7 +215,10 @@ $(document).ready(function() {
       request.fail(function(jqXHR, textStatus) {
           $('.modalForm').removeClass('visuallyHidden');
           $('.modal__content').text('Ошибка');
+          scrollControl(false);
+          $('.navigation__dots').css('z-index', '-1');
           modalClose('.modalForm');
+
           // alert("Request failed: " + textStatus);
       });
   }
