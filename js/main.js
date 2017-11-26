@@ -219,7 +219,7 @@ $(document).ready(function() {
           $('.navigation__dots').css('z-index', '-1');
           modalClose('.modalForm');
 
-          // alert("Request failed: " + textStatus);
+          alert("Request failed: " + textStatus);
       });
   }
 
@@ -236,7 +236,7 @@ $(document).ready(function() {
       });
   }
 
-  $('.order-form__tag').on('submit', submitForm);
+  $('#order-form').on('submit', submitForm);
 
 
 });
