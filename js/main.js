@@ -232,8 +232,8 @@ $(document).ready(function() {
       return $.ajax({
           type: 'POST',
           url: url,
-          data: data
-          // dataType: 'JSON'
+          data: data,
+          dataType: 'JSON'
       });
   }
 
