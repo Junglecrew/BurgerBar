@@ -1329,7 +1329,7 @@ h2 {
 	background-color: #1f2122;
 }
 
-.modalReview {
+.modal {
 	height: 100vh;
 	width: 100%;
 	background-color: rgba(47,50,52,.92);
@@ -1343,7 +1343,7 @@ h2 {
 	transition: .5s;
 }
 
-.modalReview__close {
+.modal__close {
 	background-color: transparent;
 	border: 0;
 	position: absolute;
@@ -1352,7 +1352,7 @@ h2 {
 	
 }
 
-.modalReview__container {
+.modal__container {
 	width: 470px;
 	height: auto;
 	background-color: #fff;
@@ -1360,7 +1360,7 @@ h2 {
 	margin: 0 auto;
 }
 
-.modalReview-wrapper {
+.modal-wrapper {
 	position: relative;
 	margin: 20px;
 }
@@ -1372,7 +1372,7 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.modalReview__content {
+.modal__content {
 	font-family: 'ubuntulight';
 	font-size: 14px;
 	line-height: 24px;

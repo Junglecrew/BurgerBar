@@ -659,12 +659,12 @@
 						
 					</ul>
 				</div>
-				<div class="modalReview visuallyHidden">
-					<div class="modalReview__container">
-						<div class="modalReview-wrapper">
-							<button class="modalReview__close"><img src="img/modalClose.png" alt=""></button>
+				<div class="modal modalReview  visuallyHidden">
+					<div class="modal__container">
+						<div class="modal-wrapper">
+							<button class="modal__close"><img src="img/modalClose.png" alt=""></button>
 							<div class="modalReview__title"></div>
-							<div class="modalReview__content"></div>
+							<div class="modal__content"></div>
 						</div>
 					</div>
 				</div>
@@ -676,7 +676,7 @@
 						<h2 class="section__title section__title--orange">Закажите доставку</h2>
 					</div>
 					<div class="order-form__fields">
-						<form action="#" class="order-form__tag">
+						<form action="mail.php" method ="post" class="order-form__tag">
 							<div class="order-form-side">
 								<div class="order-form-side__left">
 									<div class="order-form-side__row">
@@ -736,7 +736,7 @@
 										</div>
 										<div class="order-form-side__row">
 											<div class="order-form-side__checkbox">
-												<input type="checkbox" name="checkbox" id="ch1" class="order-form-side__checkbox-elem">
+												<input type="checkbox" name="callback" id="ch1" class="order-form-side__checkbox-elem" value="1">
 												<label for="ch1" class="order-form-side__checkbox-name"><span></span>Не перезванивать</label>
 											</div>
 										</div>
@@ -754,6 +754,14 @@
 						
 					</div>
 				</div>
+				<div class="modal modalForm visuallyHidden">
+					<div class="modal__container">
+						<div class="modal-wrapper">
+							<button class="modal__close"><img src="img/modalClose.png" alt=""></button>
+							<div class="modal__content"></div>
+						</div>
+					</div>
+				</div>				
 			</section>
 																											<!-- Восьмая секция -->
 			<section class="section contacts-section" data-anchor="contacts">

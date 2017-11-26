@@ -154,7 +154,7 @@ $(document).ready(function() {
             comment = container.children('.reviews__text').text();
             showModal = function() {
               $('.modalReview__title').text(name);
-              $('.modalReview__content').text(comment); 
+              $('.modal__content').text(comment); 
             }
             showModal();
 
@@ -164,7 +164,7 @@ $(document).ready(function() {
         scrollControl(false);
       if (!$('.modalReview').hasClass('visuallyHidden')) {
         //закрытие окна модалки при клике на крестик
-        $('.modalReview__close').click(function(e){
+        $('.modal__close').click(function(e){
           e.preventDefault()
           $('.modalReview').addClass('visuallyHidden');
           scrollControl(true);
@@ -172,7 +172,7 @@ $(document).ready(function() {
         });
         // закрыие окна модалки при клике вне области
         $('.modalReview').click(function(e){
-          if ($('.modalReview__container').has(e.target).length === 0) {
+          if ($('.modal__container').has(e.target).length === 0) {
             $('.modalReview').addClass('visuallyHidden');
             scrollControl(true);
             $('.navigation__dots').css('z-index', '3');
@@ -236,3 +236,41 @@ $(document).ready(function() {
   }
 
 
+// Отправка сообщения от клиента на почту администратору
+var submitForm = function (ev) {
+    ev.preventDefault();
+
+    var form = $(ev.target);
+        
+    var request = ajaxForm(form);
+
+    request.done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        if (status === 'OK') {
+            $('.modal__content').text('Спасибо, Ваша заявка отправлена!');
+        } else{
+            $('.modal__content').text('Ошибка');
+        }
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var url = form.attr('action'),
+        data = form.serialize();
+
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        data: data,
+        dataType: 'JSON'
+    });
+
+}
+
+$('.order-form__tag').on('submit', submitForm);
