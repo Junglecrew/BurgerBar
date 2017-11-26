@@ -218,7 +218,6 @@ $(document).ready(function() {
           scrollControl(false);
           $('.navigation__dots').css('z-index', '-1');
           modalClose('.modalForm');
-
           alert("Request failed: " + textStatus);
       });
   }
@@ -231,7 +230,7 @@ $(document).ready(function() {
       return $.ajax({
           type: 'POST',
           url: url,
-          data: data,
+          data: data
           // dataType: 'JSON'
       });
   }
