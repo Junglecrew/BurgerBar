@@ -199,8 +199,9 @@ $(document).ready(function() {
           var mes = msg.mes,
               status = msg.status;
 
-          console.log(msg);
-        
+          console.log(mgs);
+          console.log(status);
+          console.log(mes);
           $('.modalForm').removeClass('visuallyHidden');
           $('.navigation__dots').css('z-index', '-1');
           scrollControl(false);
