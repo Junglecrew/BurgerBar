@@ -200,8 +200,9 @@ $(document).ready(function() {
               status = msg.status;
 
           console.log(msg);
-          console.log(status);
+          console.log(msg.status);
           console.log(mes);
+          
           $('.modalForm').removeClass('visuallyHidden');
           $('.navigation__dots').css('z-index', '-1');
           scrollControl(false);
