@@ -202,7 +202,7 @@ $(document).ready(function() {
           console.log(msg);
           console.log(msg.status);
           console.log(mes);
-          
+
           $('.modalForm').removeClass('visuallyHidden');
           $('.navigation__dots').css('z-index', '-1');
           scrollControl(false);
@@ -235,7 +235,7 @@ $(document).ready(function() {
       return $.ajax({
           type: 'POST',
           url: url,
-          data: data
+          data: data,
           dataType: 'JSON'
       });
   }
