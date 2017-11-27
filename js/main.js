@@ -236,7 +236,7 @@ $(document).ready(function() {
           type: 'POST',
           url: url,
           data: data
-          // dataType: 'JSON'
+          dataType: 'JSON'
       });
   }
 
