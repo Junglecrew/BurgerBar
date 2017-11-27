@@ -42,11 +42,11 @@
 	    $data;
 
 	    if ($mail) {
-	        $data['status'] = "OK";
-	        $data['mes'] = "mail sent";
+	        $data['status'] = "ОК";
+	        $data['mes'] = "Письмо отправлено";
 	    } else {
 	        $data['status'] = "NO";
-	        $data['mes'] = "error";
+	        $data['mes'] = "Ошибка";
 	    }
 	    echo json_encode($data);
  ?>
