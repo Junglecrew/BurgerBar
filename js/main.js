@@ -199,7 +199,7 @@ $(document).ready(function() {
           var mes = msg.mes,
               status = msg.status;
 
-          console.log(mgs);
+          console.log(msg);
           console.log(status);
           console.log(mes);
           $('.modalForm').removeClass('visuallyHidden');
