@@ -42,11 +42,9 @@
 	    $data = [];
 
 	    if ($mail) {
-	    	echo "done";
 	        $data['status'] = "OK";
 	        $data['mes'] = "mail sent";
 	    } else {
-	    	echo "error";
 	        $data['status'] = "NO";
 	        $data['mes'] = "error";
 	    }
