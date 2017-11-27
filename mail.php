@@ -45,7 +45,7 @@
 	    	echo "done";
 	        $data['status'] = "OK";
 	        $data['mes'] = "mail sent";
-	    }else{
+	    } else {
 	    	echo "error";
 	        $data['status'] = "NO";
 	        $data['mes'] = "error";

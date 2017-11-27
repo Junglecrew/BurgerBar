@@ -228,12 +228,13 @@ $(document).ready(function() {
 
       var url = form.attr('action'),
           data = form.serialize();
-
+      console.log(data);
+      
       return $.ajax({
           type: 'POST',
           url: url,
-          data: data,
-          dataType: 'JSON'
+          data: data
+          // dataType: 'JSON'
       });
   }
 
