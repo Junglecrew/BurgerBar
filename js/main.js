@@ -207,7 +207,7 @@ $(document).ready(function() {
           $('.navigation__dots').css('z-index', '-1');
           scrollControl(false);
 
-          if (status === 'OK') {
+          if (status === 'ОК') {
               $('.modal__content').text('Спасибо, Ваша заявка отправлена!');
               modalClose('.modalForm');
           } else{
